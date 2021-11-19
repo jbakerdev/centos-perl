@@ -1,6 +1,7 @@
-FROM ghcr.io/jbakerdev/centos7
+ARG BASE=7
+FROM ghcr.io/jbakerdev/centos${BASE}
 LABEL name="jbakerdev/centos-perl" \
-      description="CentOS 7 with Perl"
+      description="CentOS ${BASE} with Perl"
 
 COPY cpanfile /tmp/
 
