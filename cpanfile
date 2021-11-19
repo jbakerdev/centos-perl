@@ -2,10 +2,16 @@ use strict;      # satisfy linter
 use warnings;    # satisfy linter
 
 requires 'App::cpanoutdated';
+requires 'App::cpm';
+requires 'App::Yath';
+requires 'Carton::Snapshot';
+requires 'DBIx::Class';
 requires 'ExtUtils::MakeMaker';
 requires 'File::Temp';
 requires 'List::MoreUtils';
 requires 'Module::Build';
+requires 'Moo';
+requires 'Moose';
 requires 'Perl::Critic';
 requires 'Perl::Tidy';
 requires 'Plack::Test';
