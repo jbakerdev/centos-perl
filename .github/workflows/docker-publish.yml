@@ -27,11 +27,10 @@ jobs:
       matrix:
         centos-version:
           - '7'
-          - '8'
     env:
       # github.repository as <account>/<repo>
       IMAGE_NAME: jbakerdev/centos${{ matrix.centos-version }}-perl
-    name: ${{ matrix.centos-version }}
+    name: CentOS ${{ matrix.centos-version }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
