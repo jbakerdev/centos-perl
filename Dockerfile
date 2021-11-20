@@ -9,6 +9,7 @@ COPY cpanfile /tmp/
 RUN yum update -y \
     && yum install -y --setopt=tsflags=nodocs \
         perl-App-cpanminus \
+        perl-CPAN \
     && yum clean all
 
 # Install cpm/carton
