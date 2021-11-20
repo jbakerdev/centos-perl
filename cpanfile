@@ -2,6 +2,7 @@ use strict;      # satisfy linter
 use warnings;    # satisfy linter
 
 requires 'App::cpanoutdated';
+requires 'App::mymeta_requires';
 requires 'App::Yath';
 requires 'DBIx::Class';
 requires 'ExtUtils::MakeMaker';
